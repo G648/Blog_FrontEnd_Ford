@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* control + ; = comenta linha selecionada */
+/* Reset do CSS padrão */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #F3F5F7;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+/* Fazendo nosso "embrulho" a partir do grid no nosso layout */
+.box-grid{
+    width: 900px;
+    /* margin: 0 auto => centraliza o conteúdo horizontalmente (eixo x) */
+    /* margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto; */
+    margin: 0 auto;
+
+    /* border: 2px solid black; */
+}
+
+/* Estilização do menu */
+nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+header{
+    width: 100%;
+    height: 112px;
+    background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-ativo{
+    text-decoration: underline;
+}
+/* Fim estilização do menu */
+
+/* Estilização conteúdo principal */
+main{
+    background-color: #F3F5F7;
+    min-height: 100vh;
+}
+
+.artigo{
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 64px 0;
+    border-radius: 5px;
+}
+
+.cabecalho-artigo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cabecalho-data{
+    color: #B6B6B6;
+    font-size: 1em;
+}
+
+.cabecalho-icone{
+    font-size: 1.5em;
+    color: #BC3FDB;
+}
+
+.conteudo-titulo{
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    color: #313131;
+    font-weight: 500;
+}
+
+.conteudo-paragrafo{
+    color: #B6B6B6;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+/* Fim estilização conteúdo principal */
+
+/* Estilização rodapé */
+footer{
+    background-color: #BC3EDB;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+

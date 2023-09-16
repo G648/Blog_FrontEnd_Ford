@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="./css/contato.css">
+
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <nav class="box-grid">
+            <h3>Blog</h3>
+            <ul>
+                <li><a href="./index.html">blog</a></li>
+                <li><a class="link-ativo" href="#">contato</a></li>
+            </ul>
+        </nav>
+
+        <main class="box-grid">
+            <Section class="box-forms">
+                <div class="box-tittle-info">
+                    <h1>
+                        Entre em contato conosco!
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolores earum, minus facilis
+                        consequatur iusto error quidem aliquid ab aspernatur.
+                    </p>
+                </div>
+
+                <form class="form-informations">
+                    <div class="input-forms">
+                        <div class="email-senha">
+                            <label for="name">Nome</label><br>
+                            <input type="text" placeholder="Informe seu nome completo">
+                        </div>
+                        <div class="email-senha">
+                            
+                            <label for="email">Email</label><br>
+                            <input type="email" placeholder="Informe seu melhor email">
+                        </div>
+                        <div class="email-senha input-textarea">
+                            <label for="mensagem-usuario">Mensagem</label>
+                            <textarea name="about" id="firstextarea" cols="30" rows="2" placeholder="Informe a mensagem "></textarea>
+                        </div>
+                    </div>
+                    <button class="button-form" type="submit" onclick="clicarBotao()">Entrar em contato</button>
+                </form>
+            </Section>
+        </main>
+
+        <footer>
+            <p class="box-grid"> Essa página foi inspirada no Desafio 1 do <a class="link-ativo"
+                    href="https://github.com/iuricode" target="_blank">@iuricode</a>
+                para fins educacionais.</p>
+        </footer>
+    </header>
+
+    <script type="text/Javascript">
+        function clicarBotao() {
+            alert("Mensagem enviada com sucesso!!")
+        }
+        
+    </script>
+</body>
+
+</html>
