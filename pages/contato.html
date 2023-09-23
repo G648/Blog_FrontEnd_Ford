@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css" >
-    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="Javascript" href="../css/contato.css">
 
     <title>Contato</title>
 </head>
@@ -17,7 +17,7 @@
         <nav class="box-grid">
             <h3>Blog</h3>
             <ul>
-                <li><a href="./index.html">blog</a></li>
+                <li><a href="../index.html">blog</a></li>
                 <li><a class="link-ativo" href="#">contato</a></li>
             </ul>
         </nav>
@@ -51,6 +51,7 @@
                         </div>
                     </div>
                     <button class="button-form" type="submit" onclick="clicarBotao()">Entrar em contato</button>
+                    <p id="return-message"></p>
                 </form>
             </Section>
         </main>
@@ -63,10 +64,18 @@
     </header>
 
     <script type="text/Javascript">
+
         function clicarBotao() {
-            alert("Mensagem enviada com sucesso!!")
+
+            var txt;
+
+            if (confirm ("Deseja mesmo cadastrar os valores?")) {
+                txt = "Formulário cadastrado com sucesso";
+            }else{
+                txt = "Envio de formulário cancelado";
+            }
+            document.getElementById("return-message").innerHTML = txt;
         }
-        
     </script>
 </body>
 
